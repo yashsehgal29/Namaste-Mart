@@ -1,7 +1,3 @@
-Creating a comprehensive and informative README file for your e-commerce website project "Namste Mart" is essential for communicating the purpose, setup instructions, and usage of your project. Here's a suggested structure for your README file:
-
----
-
 # Namste Mart
 
 Namste Mart is an e-commerce website built with modern web technologies, offering a seamless shopping experience for users. This README provides an overview of the project, how to set it up, and other relevant information.
