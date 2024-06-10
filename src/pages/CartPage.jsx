@@ -155,7 +155,7 @@ const CartPage = () => {
                                                             />
                                                         </div>
                                                         <div className="flex flex-col justify-between flex-1 ml-4 sm:ml-6">
-                                                            <div className="relative pr-9 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:pr-0">
+                                                            <div className="pr-9 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:pr-0">
                                                                 <div>
                                                                     <div className="flex justify-between">
                                                                         <h3 className="text-sm">
