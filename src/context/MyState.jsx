@@ -2,13 +2,14 @@
 import { useEffect, useState } from 'react';
 import MyContext from './MyContext';
 import { collection, onSnapshot, orderBy, query,deleteDoc,doc } from 'firebase/firestore';
-import { firedb } from '../firebase/FirebaseConfig';
+import { firedb,auth } from '../firebase/FirebaseConfig';
 import toast from 'react-hot-toast';
+import { onAuthStateChanged } from 'firebase/auth';
 
 function MyState({ children }) {
     // Loading State 
     const [loader, setloader] = useState(false);
-
+    const [isAuthenticated, setIsAuthenticated] = useState(false);
     // User State
     const [getAllProduct, setGetAllProduct] = useState([]);
 
@@ -98,6 +99,12 @@ const [getAllOrder, setGetAllOrder] = useState([]);
         getAllProductFunction();
         getAllOrderFunction();
         getAllUserFunction();
+    }, []);
+    useEffect(() => {
+        const unsubscribe = onAuthStateChanged(auth, user => {
+            setIsAuthenticated(!!user);
+        });
+        return () => unsubscribe();
     }, []);
     return (
         <MyContext.Provider value={{

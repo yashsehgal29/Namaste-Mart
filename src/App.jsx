@@ -17,6 +17,7 @@ import { UserRoute } from "./protectedroutes/UserRoute";
 import { AdminRoute } from "./protectedroutes/AdminRoute";
 import Category from "./components/category/Category";
 import Categorypage from "./pages/Categorypage";
+import CartRoute from "./protectedroutes/CartRoute";
 export default function App() {
   return (
     <MyState >
@@ -26,7 +27,12 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/*" element={<NoPage />} />
           <Route path="/productInfo/:id" element={<ProductInfo/>} />
-          <Route path="/cart" element={<CartPage/>}/>
+            <Route path="/cart" element={
+              <CartRoute>
+                <CartPage />
+              </CartRoute>
+              
+            } />
           <Route path="/allproducts" element={<AllProductpage/>}/>
           <Route path="/category/:categoryname" element={<Categorypage/>}/>
           <Route path="/signup" element={<SignUppage/>}/>
