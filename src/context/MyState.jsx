@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { useEffect, useState } from 'react';
+import { useEffect, useState,useCallback } from 'react';
 import MyContext from './MyContext';
 import { collection, onSnapshot, orderBy, query,deleteDoc,doc } from 'firebase/firestore';
 import { firedb,auth } from '../firebase/FirebaseConfig';
@@ -100,12 +100,7 @@ const [getAllOrder, setGetAllOrder] = useState([]);
         getAllOrderFunction();
         getAllUserFunction();
     }, []);
-    useEffect(() => {
-        const unsubscribe = onAuthStateChanged(auth, user => {
-            setIsAuthenticated(!!user);
-        });
-        return () => unsubscribe();
-    }, []);
+   
     return (
         <MyContext.Provider value={{
             loader,
@@ -114,7 +109,8 @@ const [getAllOrder, setGetAllOrder] = useState([]);
             getAllProductFunction,
             getAllOrder,
             deleteProduct,
-            getAllUser
+            getAllUser,
+           
         }}>
             {children}
         </MyContext.Provider>
