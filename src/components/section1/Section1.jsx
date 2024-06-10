@@ -3,7 +3,7 @@ import React from 'react'
 const Section1 = () => {
   return (
     <div >
-      <img src="https://drive.google.com/file/d/1uXVFLPLUnWpjpy0L7LbLzm4yeA2rOLIU/view?usp=sharing/src/assets/Frame 1.png" className='w-full' alt="img" />
+      <img src="https://github.com/yashsehgal29/images/blob/main/Frame%201.png?raw=true" className='w-full' alt="img" />
     </div>
   )
 }

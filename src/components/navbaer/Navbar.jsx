@@ -59,9 +59,9 @@ const Navbar = () => {
       <div className="items-center px-2 py-3 lg:flex lg:justify-between lg:px-9">
         {/* Left */}
         <div className="flex items-center py-3 text-2xl font-extrabold text-center left lg:py-0" >
-          <img className="h-12 w-14" src="/src/assets/namaste.png"/>
+          <img className="h-12 w-14" src="https://github.com/yashsehgal29/images/blob/main/namaste.png?raw=true"/>
           <Link to={'/'}> Namaste-Mart</Link>
-          <img className="w-12" src="/src/assets/cart.png"/>
+          <img className="w-12" src="https://github.com/yashsehgal29/images/blob/main/cart.png?raw=true"/>
          
         </div>
         {/* right */}

@@ -13,7 +13,7 @@ const Footer = () => {
        <div className="flex flex-col items-center gap-1 lg:flex-row">
 
         <div className="flex items-center">
-        <img className="w-12 h-12" src="/src/assets/namaste.png"/>
+        <img className="w-12 h-12" src="https://github.com/yashsehgal29/images/blob/main/namaste.png?raw=true"/>
          <span className="text-xl">Namaste-Mart | </span>
         </div>
         
