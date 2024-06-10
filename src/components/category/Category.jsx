@@ -33,6 +33,10 @@ const category = [
     {
         image: 'https://cdn-icons-png.flaticon.com/256/11946/11946316.png',
         name: 'books'
+    },
+    {
+        image: 'https://cdn-icons-png.flaticon.com/512/2553/2553695.png',
+        name: 'Sports'
     }
 ]
 

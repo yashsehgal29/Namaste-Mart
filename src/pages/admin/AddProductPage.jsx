@@ -31,6 +31,9 @@ const categoryList = [
     },
     {
         name: 'books'
+    },
+    {
+        name:'Sports'
     }
 ]
 const AddProductPage = () => {

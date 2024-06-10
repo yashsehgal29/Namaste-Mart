@@ -4,13 +4,15 @@ import OrderDetail from '../../components/admin/OrderDetail';
 import MyContext from '../../context/MyContext';
 import { useContext } from 'react';
 import UserDetail from '../../components/admin/UserDetail';
+import Layout from '../../components/layout/Layout';
 
 const AdminDashboard = () => {
     const user = JSON.parse(localStorage.getItem('users'));
     const context = useContext(MyContext);
     const {getAllProduct, getAllOrder, getAllUser} = context;
     return (
-        <div className='h-screen bg-white'>
+        <Layout>
+            <div className=''>
             {/* Top */}
             <div className="px-5 mt-5 mb-5 top">
                 <div className="py-5 bg-blue-100 border border-blue-100 rounded-lg">
@@ -144,6 +146,8 @@ const AdminDashboard = () => {
                 </div>
             </div>
         </div>
+        </Layout>
+        
     );
 }
 

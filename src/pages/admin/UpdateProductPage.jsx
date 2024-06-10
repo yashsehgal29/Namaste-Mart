@@ -29,6 +29,9 @@ const categoryList = [
     },
     {
         name: 'books'
+    },
+    {
+        name:'Sports'
     }
 ]
 
